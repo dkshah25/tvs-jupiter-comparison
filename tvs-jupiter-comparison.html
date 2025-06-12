@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TVS Jupiter Comparison</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    .button {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>TVS Jupiter Variant Comparison (2025)</h1>
+
+  <div id="content">
+    <h2>Side-by-Side Comparison</h2>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>110 Drum SXC</th>
+        <th>110 Disc SXC</th>
+        <th>125 SmartXonnect</th>
+        <th>125 DT SXC</th>
+      </tr>
+      <tr>
+        <td>Engine</td>
+        <td>113.3cc, 7.9 bhp, 9.8Nm</td>
+        <td>Same as Drum</td>
+        <td>124.8cc, 8.15PS, 10.5Nm</td>
+        <td>124.8cc, 8.7bhp, 11.1Nm</td>
+      </tr>
+      <tr>
+        <td>Front Brake</td>
+        <td>Drum</td>
+        <td>220mm Disc + CBS</td>
+        <td>220mm Disc + CBS</td>
+        <td>220mm Disc + CBS</td>
+      </tr>
+      <tr>
+        <td>Instrumentation</td>
+        <td>LCD + BT, Nav, Alerts</td>
+        <td>Same + Disc Upgrade</td>
+        <td>Full LCD + Voice Assist</td>
+        <td>Color LCD, Nav, BT</td>
+      </tr>
+      <tr>
+        <td>Storage</td>
+        <td>33L + 2L</td>
+        <td>Same</td>
+        <td>33L + 2L</td>
+        <td>33L + 2L</td>
+      </tr>
+      <tr>
+        <td>Seat Height</td>
+        <td>~790mm</td>
+        <td>~790mm</td>
+        <td>765mm</td>
+        <td>765mm</td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td>105kg</td>
+        <td>106kg</td>
+        <td>108kg</td>
+        <td>108kg</td>
+      </tr>
+      <tr>
+        <td>Price (Ex-Showroom)</td>
+        <td>₹83,250</td>
+        <td>₹87,250</td>
+        <td>₹92,001</td>
+        <td>₹88,942</td>
+      </tr>
+    </table>
+
+    <h2>Ranking (Best to Basic)</h2>
+    <ol>
+      <li><b>125 DT SXC</b> – Stylish, powerful, affordable.</li>
+      <li><b>125 SmartXonnect</b> – Ultimate smart features.</li>
+      <li><b>110 Disc SXC</b> – Compact and safe.</li>
+      <li><b>110 Drum SXC</b> – Basic smart variant.</li>
+    </ol>
+
+    <h2>Summary Recommendations</h2>
+    <ul>
+      <li><b>Best overall:</b> 125 DT SXC</li>
+      <li><b>Smartest features:</b> 125 SmartXonnect</li>
+      <li><b>Safe & affordable:</b> 110 Disc SXC</li>
+      <li><b>Budget-friendly:</b> 110 Drum SXC</li>
+    </ul>
+  </div>
+
+  <button class="button" onclick="downloadPDF()">Download as PDF</button>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById('content');
+      html2pdf().from(element).save('TVS_Jupiter_Comparison_2025.pdf');
+    }
+  </script>
+
+</body>
+</html>
